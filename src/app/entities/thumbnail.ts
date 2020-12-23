@@ -1,8 +1,9 @@
-export class Result {
-  id: string;
-  name: string;
-  description: string;
-  modified: string;
-  resourceURI: string;
-  thumbnail: Thumbnail;
+export class Thumbnail {
+  path: string;
+  extension: string;
+
+  constructor() {
+    this.path = '';
+    this.extension = '';
+  }
 }

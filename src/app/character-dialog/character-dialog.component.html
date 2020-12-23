@@ -1,1 +1,7 @@
-<p>character-dialog works!</p>
+<h1 mat-dialog-title>{{data.name}}</h1>
+<div mat-dialog-content>
+  <p>{{data.description}}</p>
+</div>
+<div mat-dialog-actions class="align-buttons">
+  <button mat-stroked-button color="warn" (click)="close()">Close</button>
+</div>

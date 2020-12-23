@@ -9,23 +9,8 @@ export class GenericService<T> {
     service: CoreService;
     url = '';
 
-    get(id: string, token: string = '', isPublic: boolean = false): Observable<T> {
-        return this.service.post<T>('/' + this.url, {id, token, public: isPublic}, token === '');
+    get(nameStartsWith: string): Observable<T> {
+        return this.service.get<T>('/' + this.url, {nameStartsWith});
     }
 
-    list(isPublic = false): Observable<T[]> {
-        return this.service.post<T[]>('/' + this.url + '/list', {public: isPublic});
-    }
-
-    create(obj: T): Observable<T> {
-        return this.service.post<T>('/' + this.url + '/create', obj);
-    }
-
-    update(obj: T): Observable<T> {
-        return this.service.post<T>('/' + this.url + '/update', obj);
-    }
-
-    delete(obj: T): Observable<T> {
-        return this.service.post<T>('/' + this.url + '/delete', obj);
-    }
 }

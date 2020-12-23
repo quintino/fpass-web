@@ -1,27 +1,30 @@
-# MarvelWeb
+# Marvel Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+Este projeto foi criado sobre o Angular Cli na versão 11.0.1
 
-## Development server
+## Montagem do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para rodar o projeto é necessário inicialmente que se execute
+o comando `npm install` para que sejam instalados todos os
+módulos necessários.
 
-## Code scaffolding
+## Iniciando a aplicação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para iniciar deve-se rodar o seguinte comando `ng serve` e depois
+acessar a seguinte url `http://localhost:4200/`. Lembrando que
+esta aplicação tem `hot deploy` e por isso se mudar algo no código
+o mesmo atualizará automaticamente, caso não esteja com erro.
 
-## Build
+## Motivo da tecnologia usada
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Usei o Angular ao invés do React para demonstrar os meus conhecimentos
+nessa tecnologia, assim como em Typescript. Eu fiz toda a implementação
+sobre a api, onde montei uma estrutura de interceptação da requisição
+para passar os dados de acesso à mesma, deixando assim as requisições
+totalmente transparentes e simples de trabalhar a nível de código.
 
-## Running unit tests
+## Design
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Eu utilizei o modelo apresentado, e como não tinha o exemplo da tela
+da listagem eu segui a mesma ideia, apesar de não ter ficado bem do
+jeito que gostaria, mas ficou até bem apresentável.
